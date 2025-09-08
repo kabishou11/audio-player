@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频播放 - 录音2025090771731.wav</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .filename {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        audio {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🎵</div>
+        <h1>音频文件播放</h1>
+        
+        <div class="filename">
+            📁 录音2025090771731.wav
+        </div>
+        
+        <audio controls preload="auto">
+            <source src="录音2025090771731.wav" type="audio/mpeg">
+            <source src="录音2025090771731.wav" type="audio/wav">
+            <source src="录音2025090771731.wav" type="audio/ogg">
+            您的浏览器不支持音频播放。
+        </audio>
+        
+        <div>
+            <a href="录音2025090771731.wav" download="录音2025090771731.wav" class="download-btn">
+                📥 下载音频文件
+            </a>
+        </div>
+        
+        <div class="footer">
+            扫描二维码访问 • 支持在线播放和下载
+        </div>
+    </div>
+    
+    <script>
+        // 自动播放（某些浏览器可能阻止）
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.querySelector('audio');
+            audio.play().catch(e => {
+                console.log('自动播放被阻止，需要用户手动播放');
+            });
+        });
+    </script>
+</body>
+</html>
